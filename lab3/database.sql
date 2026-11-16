@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS lab3_expenses
+	CHARACTER SET utf8mb4
+	COLLATE utf8mb4_unicode_ci;
+
+USE lab3_expenses;
+
+CREATE TABLE IF NOT EXISTS Expenses (
+	Id INT NOT NULL AUTO_INCREMENT,
+	Description VARCHAR(255) NOT NULL,
+	Category VARCHAR(100) NOT NULL,
+	Amount DECIMAL(12, 2) NOT NULL,
+	ExpenseDate DATE NOT NULL,
+	PRIMARY KEY (Id)
+);
